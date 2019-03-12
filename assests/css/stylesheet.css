@@ -1,4 +1,10 @@
-.position{
-    position: relative;
-    top: 35%;
+#sidebar {
+    height: 100%;
+    padding-top: 18%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#navBar {
+    margin-bottom: 0px;
 }
