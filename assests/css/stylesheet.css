@@ -2,3 +2,17 @@
     position: relative;
     top: 35%;
 }
+
+.container {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.jumbotron {
+    width: 600px;
+    text-align: center;
+    background: limegreen;
+    color: snow;
+}
+
