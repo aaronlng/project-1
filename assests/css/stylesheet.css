@@ -51,3 +51,6 @@ color: green;
     margin-bottom: 0px;
 }
 
+.ui.right.floated.button {
+    margin-top: 15px;
+}
