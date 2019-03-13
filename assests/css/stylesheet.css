@@ -1,4 +1,38 @@
+#sidebar {
+     height: 100%; 
+     padding-top: 18%;  
+      margin-top: 0px; 
+    margin-bottom: 0px;
+} 
+
+#navBar {
+    margin-bottom: 0px;
+}
+
 .position{
     position: relative;
     top: 35%;
+}
+
+#small {
+color: green;
+}
+
+#big {
+color: green;
+}
+
+#Sign {
+    color: green;
+}
+#sidebar {
+    color: green;
+}
+#img {
+    margin: 50px;
+}
+
+#heart {
+    position: relative;
+    left: 80px;
 }
