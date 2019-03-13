@@ -14,14 +14,21 @@
 </head>
 
 <body>
-    <div class="ui stackable menu" id="navBar">
-        <div class="item">
-            <img src="assests/img/logo.png" alt="controller">
+    <!-- nav menu START -->
+    <div class="ui green top attached menu">
+        <div class="ui simple dropdown item">
+            <img src="assests/img/logo.png">
+            <div class="menu">
+                <div href="/trending.html" class="item">Trending</div>
+                <div href="#" class="active item">Favorites</div>
+            </div>
         </div>
-        <div class="right menu">        
+        <div class="right stackable menu">
             <div class="ui icon item">
-            <i class="sun outline link icon" id="darkMode"></i></div>
-            <a class="item" href="login.html">Sign-in</a>
+
+                <i class="sun outline link icon"></i></div>
+            <a class="modal-log-in item">Sign-in</a>
+
             <div class="item">
                 <div class="ui transparent icon input">
                     <input type="text" placeholder="Search...">
@@ -30,30 +37,115 @@
             </div>
         </div>
     </div>
-    <div class="ui position secondary vertical pointing menu" id="sidebar">
-        <a class="active item" href="index.html">Home</a>
-        <a class="item" href="Trending.html">Favorites</a>
-    </div>
+    <!-- nav menu END -->
 
-    <div class="ui two column float-left relaxed grid container"> 
+    <div class="ui two column float-left relaxed grid container">
         <div class="centered row">
             <div class="column">
                 <img class="ui small circular medium image" id="img" src="assests/img/download.png">
-                <div class="ui mini segment centered" id="small">text will go here</div>
+                <div class="ui mini green segment centered">text will go here</div>
             </div>
             <Div class="column">
-                <source src=""></div>
-            </Div>
-        </div>
+                <source src="">
+            </div>
+        </Div>
     </div>
-    
+    </div>
+
     <div class="ui float-left relaxed grid container">
         <div class="centered row">
             <div class="column">
-                <div class="ui segment centered" id="big"> more text goes here</div>
+                <div class="ui segment centered green"> more text goes here</div>
             </div>
         </div>
     </div>
+
+    <!-- login in modal START -->
+    <div id="login-modal" class="ui large modal">
+        <div class="header">Login</div>
+        <div class="content">
+            <h2 class="ui green center aligned icon header">
+                <i class="circular users icon"></i>
+                Login
+            </h2>
+
+            <div class="ui placeholder container segment">
+                <div class="ui two column very relaxed stackable grid">
+                    <div class="column">
+                        <div class="ui form">
+                            <div class="field">
+                                <label>Email</label>
+                                <div class="ui left icon input">
+                                    <input type="text" placeholder="example@email.com">
+                                    <i class="user icon"></i>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label>Password</label>
+                                <div class="ui left icon input">
+                                    <input type="password">
+                                    <i class="lock icon"></i>
+                                </div>
+                            </div>
+                            <div class="ui green submit button">Login</div>
+                        </div>
+                    </div>
+                    <div class="middle aligned column">
+                        <a id="" class="modal-sign-up ui big button">
+                            <i class="signup icon"></i>
+                            Sign Up
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="actions">
+                <div class="ui cancel button">Cancel</div>
+            </div>
+        </div>
+    </div>
+    <!-- login in modal END -->
+
+    <!-- sign up modal START -->
+    <div id="signup-modal" class="ui modal">
+        <div class="header">Header</div>
+        <div class="content">
+            <h2 class="ui green center aligned icon header">
+                <i class="circular settings icon"></i>
+                <div class="content">
+                    Register
+                </div>
+            </h2>
+
+            <form class="ui equal width form container segment">
+                <div class="fields">
+                    <div class="required field">
+                        <label>Email</label>
+                        <input type="text" placeholder="example@email.com">
+                    </div>
+                    <div class="required field">
+                        <label>Password</label>
+                        <input type="password">
+                    </div>
+                </div>
+                <div class="fields">
+                    <div class="required field">
+                        <label>First name</label>
+                        <input type="text" placeholder="First Name">
+                    </div>
+                    <div class="required field">
+                        <label>Last name</label>
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="actions">
+            <div class="ui green approve button">Submit</div>
+            <div class="ui modal-log-in button">Login</div>
+            <div class="ui cancel button">Cancel</div>
+        </div>
+    </div>
+    <!-- sign up in modal END -->
     <script src="assests/js/main.js"></script>
 </body>
 
