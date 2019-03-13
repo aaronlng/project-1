@@ -19,8 +19,5 @@ $.ajax({
 
 $('.modal-log-in').on('click', function () { $('#login-modal.large.modal').modal('show'); });
 
-$('.modal-sign-up').on('click', function () {
-  $('#login-modal.large.modal').modal('hide');
-  $('#signup-modal').modal('show');
-});
+$('.modal-sign-up').on('click', function () {$('#signup-modal').modal('show'); });
 
