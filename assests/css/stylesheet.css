@@ -4,6 +4,29 @@
     top: 35%;
 }
 
+#small {
+color: green;
+}
+
+#big {
+color: green;
+}
+
+#Sign {
+    color: green;
+}
+#sidebar {
+    color: green;
+}
+#img {
+    margin: 50px;
+}
+
+#heart {
+    position: relative;
+    left: 80px;
+}
+
 .container {
     margin: auto;
     width: 50%;
@@ -27,3 +50,4 @@
 #navBar {
     margin-bottom: 0px;
 }
+
