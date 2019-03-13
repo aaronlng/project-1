@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assests/css/stylesheet.css">
+    <link rel="stylesheet" href="assests/css/Semantic/semantic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assests/css/Semantic/semantic.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+</head>
+
+<body>
+    <div class="ui stackable menu">
+        <div class="item">
+            <img src="assests/img/logo.png" alt="controller">
+        </div>
+        <div class="ui icon item">
+            <i class="sun outline link icon"></i>
+        </div>
+        <div class="right menu">
+            <a class="item" href="login.html">Sign-in</a>
+            <div class="item">
+                <div class="ui transparent icon input">
+                    <input type="text" placeholder="Search...">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui position secondary vertical pointing menu">
+        <a class="active item" href="index.html">Home</a>
+        <a class="item" href="Trending.html">Favorites</a>
+    </div>
+
+<h2 class="ui green center aligned icon header">
+  <i class="circular settings icon"></i>
+  <div class="content">
+    Register
+  </div>
+</h2>
+
+<form class="ui equal width form container segment">
+  <div class="fields">
+    <div class="required field">
+      <label>Username</label>
+      <input type="text" placeholder="Username">
+    </div>
+    <div class="required field">
+      <label>Password</label>
+      <input type="password">
+    </div>
+  </div>
+  <div class="fields">
+    <div class="required field">
+      <label>First name</label>
+      <input type="text" placeholder="First Name">
+    </div>
+    <div class="field">
+      <label>Middle name</label>
+      <input type="text" placeholder="Middle Name">
+    </div>
+    <div class="required field">
+      <label>Last name</label>
+      <input type="text" placeholder="Last Name">
+        <button class="ui right floated button" type="submit">Submit</button>
+    </div>
+  </div>
+</form>
+
+    <script src="assests/js/main.js"></script>
+
+</body>
+
+</html>
