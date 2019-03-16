@@ -1,125 +1,55 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Trending</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assests/css/stylesheet.css">
-    <link rel="stylesheet" href="assests/css/Semantic/semantic.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="assests/css/Semantic/semantic.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Trending</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assests/css/stylesheet.css">
+  <link rel="stylesheet" href="assests/css/Semantic/semantic.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="assests/css/Semantic/semantic.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
 </head>
 
 <body>
-    <!-- nav menu START -->
-    <div class="ui green top attached menu">
-        <div class="ui simple dropdown item">
-            <img src="assests/img/logo.png">
-            <div class="menu">
-                <div href="#" class="active item">Trending</div>
-                <a href="index.html">
-                    <div class="item">Favorites</div>
-                </a>
-                <a href="Daily.html">
-                        <div class="item">Daily</div>
-                    </a>
-            </div>
+  <!-- nav menu START -->
+  <div class="ui green top attached menu">
+    <div class="ui simple dropdown item">
+      <img src="assests/img/logo.png">
+      <div class="menu">
+        <div href="#" class="active item">Trending</div>
+        <a href="index.html">
+          <div class="item">Favorites</div>
+        </a>
+        <a href="Daily.html">
+          <div class="item">Daily</div>
+        </a>
+      </div>
+    </div>
+    <div class="right stackable menu">
+      <div class="ui icon item">
+        <i class="sun outline link icon"></i></div>
+      <a id="log-in" class="item">Sign-in</a>
+      <div class="item">
+        <div class="ui transparent icon input">
+          <input type="text" placeholder="Search...">
+          <i class="search link icon"></i>
         </div>
-        <div class="right stackable menu">
-            <div class="ui icon item">
-                <i class="sun outline link icon"></i></div>
-            <a id="log-in" class="item">Sign-in</a>
-            <div class="item">
-                <div class="ui transparent icon input">
-                    <input type="text" placeholder="Search...">
-                    <i class="search link icon"></i>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-    <!-- nav menu END -->
+  </div>
+  <!-- nav menu END -->
 
-    <!-- Trending Page Cards-->
-                <div class="ui link centered cards">
-  <div class="card">
-    <div class="img">
-      <img src="assests/img/download.png">
-    </div>
-    <div class="content">
-      <div class="header">Game Title</div>
-      <div class="meta">
-        <a>Game Rateing</a>
-      </div>
-      <div class="description">
-        Game description will populate here...
-      </div>
-    </div>
-    <div class="extra content">
-      <span class="centered">
-                <!-- <div class="ui divider"></div> -->
-                <div class="ui labeled button" id="heart" tabindex="0">
-                    <div class="ui green button">
-                        <i class="heart icon"></i> Like
-                    </div>
-                    <a class="ui basic green left pointing label" id="number">1,048</a>
-                </div>
-      </span>
-    </div>
-  </div>
-  <div class="card">
-    <div class="img">
-      <img src="assests/img/download.png">
-    </div>
-    <div class="content">
-      <div class="header">Game Title</div>
-      <div class="meta">
-        <span class="date">Game Rating</span>
-      </div>
-      <div class="description">
-        Game description will populate here...
-      </div>
-    </div>
-    <div class="extra content">
-      <span class="centered">
-                <!-- <div class="ui divider"></div> -->
-                <div class="ui labeled button" id="heart" tabindex="0">
-                    <div class="ui green button">
-                        <i class="heart icon"></i> Like
-                    </div>
-                    <a class="ui basic green left pointing label" id="number">1,048</a>
-                </div>
-      </span>
-    </div>
-  </div>
-  <div class="card">
-    <div class="img">
-      <img src="assests/img/download.png">
-    </div>
-    <div class="content">
-      <div class="header">Elyse</div>
-      <div class="meta">
-        <a>Game Rating</a>
-      </div>
-      <div class="description">
-       Game description will populate here...
-      </div>
-    </div>
-    <div class="extra content">
-      <span class="centered">
-                <!-- <div class="ui divider"></div> -->
-                <div class="ui labeled button" id="heart" tabindex="0">
-                    <div class="ui green button">
-                        <i class="heart icon"></i> Like
-                    </div>
-                    <a class="ui basic green left pointing label" id="number">1,048</a>
-                </div>
-      </span>
-    </div>
-  </div>
-</div>
+  <!-- Trending Page Cards-->
+  <section id="trending">
+    <div class="ui segment">
+      <div id="cards" class="ui grid link cards">
 
+      </div>
+    </div>
+  </section>
+  <script src="assests/js/main.js"></script>
 </body>
 
 </html>
