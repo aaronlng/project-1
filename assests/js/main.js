@@ -36,18 +36,19 @@ function ignAPI() {
     url: NewsURL,
     method: "GET"
   }).then(function (data) {
-    console.log(typeof (data.totalResults));
+    console.log(data);
     var total = data.totlalResults;
     if (total !== 0) {
       for (let i = 0; i < data.articles.length; i++) {
         var titleURL = data.articles[i].title;
         var imgURL = data.articles[i].urlToImage;
         var publishURL = data.articles[i].publishedAt;
+        var siteURL = data.articles[i].url;
 
         var card = $('<div class="card">');
         var img = $('<img class="img" id="img">').attr('src', imgURL);
         var content = $('<div class="content">');
-        var title = $('<span class="header">').text(titleURL);
+        var title = $('<a class="header" target="_blank">').text(titleURL).attr('href', siteURL);
         var date = $('<span class="meta date">').text("Published: " + publishURL);
         var extra = $('<div class="extra content"><div class="ui centered labeled button" id="heart" tabindex="0"><div class="ui green button"><i class="heart icon"></i> Like</div><a class="ui basic green left pointing label" id="number">1,048</a></div></div></span>');
 
@@ -85,8 +86,8 @@ $("input[type=submit]").click(function () {
 });
 
 function processResult(apiResult) {
-    $('#description').append('<p>' + apiResult.query.search[0].snippet + '</p>');
-  }
+  $('#description').append('<p>' + apiResult.query.search[0].snippet + '</p>');
+}
 
 function resetFields() {
   $("p").empty();
