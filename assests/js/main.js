@@ -88,8 +88,6 @@ function processResult(apiResult) {
     $('#description').append('<p>' + apiResult.query.search[0].snippet + '</p>');
   }
 
- 
-
 function resetFields() {
   $("p").empty();
 }
