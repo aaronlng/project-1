@@ -75,7 +75,7 @@ $("input[type=submit]").click(function () {
   event.preventDefault();
 
   $.ajax({
-    url: 'http://en.wikipedia.org/w/api.php',
+    url: 'https://en.wikipedia.org/w/api.php',
     data: { action: 'query', list: 'search', srsearch: $("input[name=game-title]").val(), format: 'json' },
     dataType: 'jsonp',
     success: processResult
