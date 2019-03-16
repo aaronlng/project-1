@@ -13,7 +13,7 @@ var lookFor = "";
 
 
 window.onload = function () {
-
+  $('#load').load("./modals.html");
   var today = new Date();
   var dd = String(today.getDate()).padStart(2, '0');
   var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
@@ -61,6 +61,5 @@ function ignAPI() {
 }
 
 $('.modal-log-in').on('click', function () { $('#login-modal.large.modal').modal('show'); });
-
 $('.modal-sign-up').on('click', function () { $('#signup-modal').modal('show'); });
 
