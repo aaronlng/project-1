@@ -69,3 +69,26 @@ function ignAPI() {
 $('.modal-log-in').on('click', function () { $('#login-modal.large.modal').modal('show'); });
 $('.modal-sign-up').on('click', function () { $('#signup-modal').modal('show'); });
 
+
+//adding wiki API to pull descriptions to favorites page
+$("input[type=submit]").click(function () {
+  event.preventDefault();
+
+  $.ajax({
+    url: 'http://en.wikipedia.org/w/api.php',
+    data: { action: 'query', list: 'search', srsearch: $("input[name=game-title]").val(), format: 'json' },
+    dataType: 'jsonp',
+    success: processResult
+  });
+
+  resetFields();
+});
+
+function processResult(apiResult) {
+    $('#description').append('<p>' + apiResult.query.search[0].snippet + '</p>');
+  }
+
+function resetFields() {
+  $("p").empty();
+}
+
