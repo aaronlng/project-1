@@ -1,11 +1,10 @@
 
 #img {
-    margin: 50px;
+    width: 290px;
+    height: 200px;
 }
-
-#heart {
-    position: relative;
-    left: 80px;
+#cards{
+    margin-left: 13%;
 }
 
 
